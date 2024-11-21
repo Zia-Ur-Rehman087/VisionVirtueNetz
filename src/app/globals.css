@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom {
+    background-clip: text;
+    background-image: linear-gradient(to right, #FA6E00, #E60026);
+    -webkit-background-clip: text; /* For better cross-browser support */
+    color: transparent; /* Ensure the text itself is transparent */
+  }
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  width: 1280px;
+  margin: 0 auto;
+padding: 3rem 0;
+}
+@media(max-width:768px){
+  :root{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.dark{
+  background: #0a0a0a !important;
+}
+.light{
+  background: white;
+}
+/* py-4 md:py-8 px-4 md:px-8  */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    color: #0a0a0a;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
