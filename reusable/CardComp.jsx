@@ -6,7 +6,7 @@ function CardComp({svgUrl,title,description}) {
     return ( 
         (<>
 
-<Card sx={{ maxWidth: 'fit-content' , backgroundColor: '#FFFFFF0A', borderRadius:'20px', width:'100%'} }className='text-center background p-5 '>
+<Card sx={{ width:300 , backgroundColor: '#FFFFFF0A', borderRadius:'20px', width:'100%'} }className='text-center background p-5 '>
     <img src={svgUrl} alt="icon" className='mx-auto'/>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" sx={{color:'#FD6F00'}}>
