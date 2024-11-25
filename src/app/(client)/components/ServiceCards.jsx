@@ -7,7 +7,8 @@ import user from '../../../../public/user.svg'
 function ServiceCards() {
     return ( 
         <>
-   <div className="container items-center justify-center py-5 md:py-10">
+   <div className="container items-center justify-center py-5 md:py-10 md:mt-20
+  ">
    <div className="text-center ">
         <h1 className="font-bold text-2xl text-[#959595]">Services</h1>
         <p className="text-[#707070]">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>

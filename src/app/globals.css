@@ -11,8 +11,8 @@
   }
 }
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #ffffff;
+  --foreground: #171717; */
   /* width: 1280px; */
   /* margin: 0 auto; */
 padding: 3rem 0;
@@ -23,8 +23,9 @@ padding: 3rem 0;
     margin: 0 auto;
   }
 } */
+
 .dark{
-  background: #0a0a0a !important;
+  background: #121212 !important;
 }
 .light{
   background: white;
