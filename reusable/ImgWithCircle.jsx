@@ -16,9 +16,9 @@ const theme = createTheme({
 function ImageWithCircle({ imgSrc, altText , val , heading,description}) {
   return (
     <ThemeProvider theme={theme}>
-      <div className="parent ">
+  <div className="parent py-10">
 
-        <div style={{ position: 'relative', textAlign: 'center',zIndex:5}} className='flex flex-col ggap-10 bg-[#1B1B1B]dark:bg-transparent'>
+        <div style={{ position: 'relative', textAlign: 'center',zIndex:5}} className='bg-[#1B1B1B]dark:bg-transparent'>
         <img 
           src={imgSrc} 
           alt={altText} 
@@ -47,9 +47,9 @@ function ImageWithCircle({ imgSrc, altText , val , heading,description}) {
           }}
         />
       </div>
-<div className="descriptio flex flex-col items-center justify-center mt-10">
+<div className="descriptio flex flex-col items-center justify-center" style={{marginTop:25}}>
 <h1 className='font-bold text-xl' style={{color:'#ff4709'}}>{heading}</h1>
-<p className="description text-[#1B1B1B]" style={{color:'#959595'}}>{description}</p>
+<p className="description text-center" style={{color:'#959595'}}>{description}</p>
 </div>
       </div>
     </ThemeProvider>

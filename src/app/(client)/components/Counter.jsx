@@ -10,7 +10,7 @@ export default function Counter() {
 
 
   return (
-    <Grid container spacing={2} className="relative z-20 my-10 place-content-between py-5 md:py-10">
+    <Grid container spacing={2} className="relative z-20 place-content-between">
     <Grid item xs={12} sm={6} md={2} sx={{maxWidth:300}}>
       <ImageWithCircle imgSrc={Figma.src} altText="figma"  val='100' heading='100%' description='Figma'/>
     </Grid>
