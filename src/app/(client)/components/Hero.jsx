@@ -6,7 +6,6 @@ import Dribble from '../../../../public/Frame 54.svg'
 import Be from '../../../../public/Frame 55.svg'
 import HireBtn from '../../../../reusable/HireBtn'
 import Grid from '@mui/material/Grid'
-import Box from '@mui/material/Box'
 function Hero() {
 return (
 <>
@@ -40,9 +39,7 @@ Mahmood Fazile</h4>
 {/* buttons */}
 <div className="buttons flex gap-5">
     <div>
-        {/* <button className="">
-            Hire me
-        </button> */}
+
         <HireBtn text='Hire me' classes={`btn text-sm md:text-lg capitalize py-2 px-5 md:px-8 rounded-lg bg-[#FD6F00]
         border border-2 border-transparent
         hover:bg-transparent hover:border hover:border-2 hover:border-[#959595]`}/>
@@ -53,28 +50,6 @@ Mahmood Fazile</h4>
         </button>
     </div>
 </div>
-{/* experiemnce showcase desing */}
-{/* <div className="parent bg-[#FFFFFF0A] p-2 md:p-5 flex rounded font-bold text-lg w-fit flex-nowrap text-nowrap">
-    <div className=' border-r-2 border-[#959595]'>
-        <p className="text-[#FD6F00] xs:text-sm px-4">
-            5+ <br />
-            <span className='text-[#959595] dark:text-white xs:text-sm sm:text-lg'>Experience</span>
-        </p>
-    </div>
-    <div className=' border-r-2 border-[#959595]'>
-        <p className="text-[#FD6F00] px-4 xs:text-sm">
-            20+ <br />
-            <span className='text-[#959595] dark:text-white xs:text-sm sm:text-lg'>Project done</span>
-        </p>
-    </div>
-    <div>
-        <p className="text-[#FD6F00] px-4 xs:text-sm">
-            80+ <br />
-            <span className='text-[#959595] dark:text-white xs:text-sm'>Happy Clients</span>
-        </p>
-    </div>
-    <div></div>
-</div> */}
 
 <div className="parent bg-[#FFFFFF0A] p-2 md:p-5 flex rounded font-bold text-base md:text-lg w-full sm:w-auto flex-nowrap md:flex-nowrap">
   {/* <!-- Experience --> */}
@@ -119,7 +94,7 @@ Mahmood Fazile</h4>
       className="mx-auto w-64 sm:w-72 md:w-80 lg:w-96 mix-blend-luminosity rounded-full static z-50"
     />
     <div 
-      className="bg-[#1B1B1B] w-[20rem] sm:w-96 md:w-[24rem] lg:w-[28rem] h-[20rem] sm:h-72 md:h-[24rem] lg:h-[28rem] rounded-full absolute -z-50 bottom-0 sm:bottom-0 md:bottom-0 "
+      className="bg-[#1B1B1B] w-[20rem] sm:w-72 md:w-[24rem] lg:w-[28rem] h-[20rem] sm:h-72 md:h-[24rem] lg:h-[28rem] rounded-full absolute -z-50 bottom-0 sm:bottom-0 md:bottom-0 "
       style={{ left: '50%', transform: 'translateX(-50%)' }}
     >
       {/* Background decoration */}

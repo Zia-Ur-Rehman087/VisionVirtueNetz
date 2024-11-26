@@ -26,7 +26,7 @@ function Header() {
     }, [theme]);
     return (
         <>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center py-5">
                 <div className="mobile-menu block md:hidden">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 12.5H3" stroke="#959595" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
