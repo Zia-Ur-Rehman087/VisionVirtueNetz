@@ -3,39 +3,55 @@ import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import HireBtn from '../../../../reusable/HireBtn';
 import emage from '../../../../public/portfolioImage.png'
 import Image from 'next/image';
-
+import Grid from '@mui/material/Grid'
 export default function About() {
-      return (
-            (
+return (
 <>
-<div className='py-5 md:py-16'>
 <div className="text-center">
-<h1 className="font-bold text-2xl text-[#959595]">About me</h1>
-<p className="text-[#707070]">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
-
-<div className="parent grid grid-cols-1 md:grid-cols-2 gap-8 w-full justify-between h-full max-w-[100vw] mx-auto px-4]">
-  {/* Image Section */}
- <div className="relative md:m-0 flex items-center md:items-start justify-center md:justify-start" >
-<div className="relative">
-<Image
-    src={emage}
-    alt="Profile image"
-    className="object-cover mix-blend-luminosity w-[25vw]"
-  />
-  <div
-    className="absolute -z-10 bg-[#1B1B1B] rounded-t-full w-[25vw] h-[30vw] bottom-0" 
-  ></div>
-</div>
-
+<div className="text-center flex flex-col gap-4 md:gap-8 pb-24px md:pb-[40px] lg:[60px]">
+        <h1 className="font-bold text-2xl text-white text-[24px] md:text-[40px]">About me</h1>
+        <p className="text-[#707070]">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
+        </div>
 </div>
 
 
-  <div className="second flex flex-col gap-6 items-start justify-center">
-    <p
+
+{/* coach */}
+
+<Grid container spacing={2}  className='gap-5 md:gap-5 lg:gap-20 w-full'   sx={{ width: '100%' }}>
+<Grid 
+  item 
+  sm={12} 
+  md={12} 
+  lg={6} 
+  className="mx-auto xl:mx-0"
+  style={{ maxWidth: 400 }}
+>
+  <div className="relative w-full mx-auto lg:mx-0 flex justify-center items-center"   sx={{ width: '100%' }}>
+    <Image 
+      src={emage} 
+      alt="Profile image"
+      className="mx-auto w-64 sm:w-72 md:w-80 lg:w-[36rem] mix-blend-luminosity static z-50"
+    />
+    <div 
+      className="bg-[#1B1B1B] w-[18rem] md:w-[24rem] lg:w-[26rem] h-[18rem]  md:h-[24rem] lg:h-[28rem] rounded-t-full absolute -z-50 bottom-0 sm:bottom-0 md:bottom-0 "
+      style={{ left: '50%', transform: 'translateX(-50%)' }}
+    >
+      {/* Background decoration */}
+    </div>
+  </div>
+</Grid>
+
+<Grid item sm={12} md={12} lg={6} className='flex items-center justify-center xl:items-start'
+  style={{ maxWidth: '120%' }}  sx={{ width: '100%' }}
+>
+<div className="leftContent flex flex-col gap-2 md:gap-12 xl:items-start !w-full items-center h-full justify-center "
+>
+<p
       className="text-justify"
-      style={{
-        maxWidth: "600px", 
-      }}
+      // style={{
+      //   maxWidth: "800px", 
+      // }}
     >
       A software engineer, the modern-day architect of digital realms, navigates
       the ethereal landscapes of code, sculpting intangible structures that
@@ -61,17 +77,10 @@ export default function About() {
     >
       <SaveAltIcon />
       <HireBtn text="Download CV" />
+    </div>  
     </div>
-  </div>
-</div>
-
-
-
-</div>
-  
-
-</div>
-                  </>
-            )
-      );
+</Grid>  
+</Grid>
+</>
+)
 }

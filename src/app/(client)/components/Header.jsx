@@ -37,7 +37,7 @@ function Header() {
                 </div>
                 <div className={`logo uppercase text-lg md:text-2xl mx-auto md:m-0 custom font-bold font-[${k2d.style.fontFamily}]`}><Link href='/'>Logo</Link></div>
                 <div className="menu">
-                    <ul className="hidden md:flex gap-5 lg:gap-14 text-[#959595] font-normal">
+                    <ul className="hidden lg:flex gap-5 lg:gap-14 text-[#959595] font-normal">
                         <li><Link href='/' className="text-[#FD6F00]">Home</Link></li>
                         <li><Link href='/services'>Services</Link></li>
                         <li><Link href='/about'>About me</Link></li>
