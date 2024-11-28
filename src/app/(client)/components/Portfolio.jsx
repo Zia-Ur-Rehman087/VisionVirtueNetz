@@ -18,13 +18,16 @@ export function Portfolio() {
     className="py-[100px] md:py-[150px]"
   >
     <TabContext value={value}>
+    <div className="text-center flex flex-col gap-4 md:gap-8 pb-20px md:pb-[30px] lg:[80px]">
+        <h1 className="font-bold text-2xl text-[#959595] dark:text-white text-[24px] md:text-[40px]">Services</h1>
+        </div>
       <Box
         sx={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-        }}
-      >
+        }}>
+      
         <TabList
           onChange={handleChange}
           aria-label="lab API tabs example"
@@ -66,11 +69,23 @@ export function Portfolio() {
       </TabPanel>
       <TabPanel value="2">
         <PortImageList />
-        <h1>Second Slide</h1>
+        {/* <h1>Second Slide</h1> */}
       </TabPanel>
       <TabPanel value="3">
         <PortImageList />
-        <h1>Third Slide</h1>
+        {/* <h1>Third Slide</h1> */}
+      </TabPanel>
+      <TabPanel value="4">
+        <PortImageList />
+        {/* <h1>Third Slide</h1> */}
+      </TabPanel>
+      <TabPanel value="5">
+        <PortImageList />
+        {/* <h1>Third Slide</h1> */}
+      </TabPanel>
+      <TabPanel value="6">
+        <PortImageList />
+        {/* <h1>Third Slide</h1> */}
       </TabPanel>
     </TabContext>
   </Box>

@@ -9,7 +9,7 @@ return (
 <>
 <div className="text-center">
 <div className="text-center flex flex-col gap-4 md:gap-8 pb-24px md:pb-[40px] lg:[60px]">
-        <h1 className="font-bold text-2xl text-white text-[24px] md:text-[40px]">About me</h1>
+        <h1 className="font-bold text-2xl text-[#959595] dark:text-white text-[24px] md:text-[40px] capitalize">About me</h1>
         <p className="text-[#707070]">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
         </div>
 </div>
@@ -45,10 +45,10 @@ return (
 <Grid item sm={12} md={12} lg={6} className='flex items-center justify-center xl:items-start'
   style={{ maxWidth: '120%' }}  sx={{ width: '100%' }}
 >
-<div className="leftContent flex flex-col gap-2 md:gap-12 xl:items-start !w-full items-center h-full justify-center "
+<div className="leftContent flex flex-col gap-8 md:gap-12 xl:items-start !w-full items-center h-full justify-center "
 >
 <p
-      className="text-justify"
+      className="text-justify leading-loose  text-[#959595] dark:text-white"
       // style={{
       //   maxWidth: "800px", 
       // }}
@@ -66,12 +66,9 @@ return (
       quest for perfection.
     </p>
     <div
-      className="flex gap-2  items-center text-sm capitalize rounded-lg"
+      className="flex gap-2  items-center text-sm capitalize rounded-lg px-5 md:px-10 py-2 bg-[#FD6F00] hover:bg-transparent hover:border hover:border-[#959595] border-2 border-transparent hover:dark:border-2 hover:dark:border-white hover:text-[#707070] hover:font-medium hover:dark:text-white  cursor-pointer"
       style={{
-        backgroundColor: "#FD6F00",
-        border: "2px solid transparent",
         transition: "all 0.3s ease-in-out",
-        padding:'10px',
       }}
 
     >

@@ -20,7 +20,7 @@ function Footer() {
             <footer className="bg-white shadow dark:bg-[#1b1b1b] mt-4 md:mt-10 md:pt-5">
                 <div className="w-full max-w-screen-xl mx-auto pt-4 px-4 md:pt-8 md:px-8">
                     <div className="
-        flex flex-col gap-5 items-center justify-between">
+        flex flex-col gap-5 items-center justify-between gap-4 md:gap-8">
                         <div className={`logo uppercase text-lg md:text-2xl mx-auto md:m-0 custom font-bold font-[${k2d.style.fontFamily}]`}><Link href='/'>Logo</Link></div>
                         <ul className="flex flex-wrap items-center gap-5 justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
@@ -60,7 +60,7 @@ function Footer() {
                             />
                         </div>
 {/* contact info */}
-<div className="contact-info flex gap-5 items-center justify-center flex-wrap md:flex-nowrap text-[#B1B1B1]">
+<div className="contact-info flex gap-5 md:gap-10 items-center justify-center flex-wrap md:flex-nowrap text-[#B1B1B1]">
     <div className="mail flex gap-2 items-center justify-center">
     <MailOutlineIcon/>
         <Link href='mailto:Mahmood.fazile7005@gmail.com'>

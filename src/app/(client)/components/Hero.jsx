@@ -9,14 +9,14 @@ import Grid from '@mui/material/Grid'
 function Hero() {
 return (
 <>
-<Grid container spacing={2} className='gap-5 md:gap-5 pt-5 md:pt-10 lg:gap-10'>
+<Grid container spacing={2} className='gap-5 md:gap-5 pt-5 md:pt-10 lg:gap-10 justify-center md:justify-start'>
 <Grid item sm={12} md={12} lg={6} className='flex xs:items-center xs:justify-center gap-5  w-full xl:items-start'>
 <div className="leftContent flex flex-col gap-8 md:gap-12 xl:items-start w-full items-center h-full justify-center ">
 
 <h4 className='text-[#959595] text-lg md:text-xl text-center xl:text-start'>
 <span className="text-[#707070]">Hi I am</span><br/>
 Mahmood Fazile</h4>
-<h1 className="text-[#984300] xs:text-lg text-2xl md:text-5xl font-bold">UI/UX designer</h1>
+<h1 className="text-[#984300] xs:text-lg text-[2.6rem] md:text-[4rem]  text-nowrap md:text-5xl font-bold">UI/UX designer</h1>
 {/* ICONS */}
 <div className="icons flex gap-5">
     <Image
@@ -45,7 +45,7 @@ Mahmood Fazile</h4>
         hover:bg-transparent hover:border hover:border-2 hover:border-[#959595]`}/>
     </div>
     <div>
-        <button className="btn text-sm md:text-lg capitalize py-2 px-5 md:px-8 rounded-lg border border-2 border-[#959595] text-[#959595] bg-transparent hover:bg-[#FD6F00] hover:border-transparent">
+        <button className="btn text-sm md:text-lg capitalize py-2 px-5 md:px-8 rounded-lg border border-2 border-[#959595] text-[#959595] bg-transparent hover:bg-[#FD6F00] hover:border-transparent hover:text-white">
             Download CV
         </button>
     </div>

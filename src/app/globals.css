@@ -29,6 +29,7 @@
 }
 .light{
   background: white;
+  /* color: #959595 !important; */
 }
 /* py-4 md:py-8 px-4 md:px-8  */
 @media (prefers-color-scheme: dark) {

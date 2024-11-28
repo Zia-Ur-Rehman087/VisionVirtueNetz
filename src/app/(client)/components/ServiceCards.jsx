@@ -11,7 +11,7 @@ function ServiceCards() {
 <div className="container items-center justify-center
   ">
    <div className="text-center flex flex-col gap-4 md:gap-8 pb-24px md:pb-[60px] lg:[80px]">
-        <h1 className="font-bold text-2xl text-white text-[24px] md:text-[40px]">Services</h1>
+        <h1 className="font-bold text-2xl text-[#959595] dark:text-white text-[24px] md:text-[40px]">Services</h1>
         <p className="text-[#707070]">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
         </div>
    </div>
