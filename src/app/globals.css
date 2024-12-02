@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer utilities {
   .custom {
     background-clip: text;
@@ -9,6 +8,13 @@
     -webkit-background-clip: text; /* For better cross-browser support */
     color: transparent; /* Ensure the text itself is transparent */
   }
+  .active{
+    color:#FD6F00 !important;
+  }
+  .activ2{
+    color:#959595 !important;
+  }
+ 
 }
 :root {
   /* --background: #ffffff;
@@ -23,7 +29,6 @@
     margin: 0 auto;
   }
 } */
-
 .dark{
   background: #121212 !important;
 }
@@ -35,7 +40,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f1f1f1;
     color: #0a0a0a;
   }
 }
@@ -45,3 +50,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.PhoneInputInput{
+  background: transparent !important;
+}
+.PhoneInputInput:focus{
+    outline: none !important;
+    background: transparent !important;
+}
+
+/* select:hover{
+  background-color: #FD6F00 !important;
+} */

@@ -4,8 +4,11 @@ import Header from '../app/(client)/components/Header'
 import "./globals.css";
 import Container from '@mui/material/Container';
 import Footer from '../app/(client)/components/Footer.jsx'
-
-
+import {Chakra_Petch } from 'next/font/google'
+const chakra = Chakra_Petch({
+  subsets: ['latin'],
+  weight: '400', 
+})
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,14 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en"> 
-      <body> 
-    <Container maxWidth="lg">
+      <body  style={{fontFamily : chakra.style.fontFamily}}>
     <ProvideR>
-     < Header />
+    < Header /> 
+    <Container maxWidth="lg">
+    
      {children}
-     </ProvideR>
     </Container>
     <Footer/>
+    </ProvideR>
       </body>
     </html>
   );
