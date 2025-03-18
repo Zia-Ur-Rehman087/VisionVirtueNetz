@@ -1,6 +1,6 @@
 
 import { K2D } from 'next/font/google'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import {Instagram, Linkdin,Pinterest,Be} from '../../../reusable/social'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
@@ -18,11 +18,11 @@ const theme = useSelector(state => state.theme.theme)
             <footer className="bg-[#FD6F00] text-white dark:text-[#959595]  shadow dark:bg-[#1b1b1b] mt-4 md:mt-10 md:py-5">
                 <div className="w-full max-w-screen-xl mx-auto pt-4 px-4 md:pt-8 md:px-8">
                     <div className="
-        flex flex-col gap-5 items-center justify-between gap-4 md:gap-8">
+        flex flex-col gap-5 items-center justify-between md:gap-8">
                         <div className={`logo uppercase text-lg md:text-2xl mx-auto md:m-0 custom font-bold font-[${k2d.style.fontFamily}]`}>
                             
                             <Link href='/'>Logo</Link></div>
-                            <ul className="flex flex-wrap gap-5 lg:gap-14 font-normal text-[#FD6F00] text-white dark:text-[#959595]">
+                            <ul className="flex flex-wrap gap-5 lg:gap-14 font-normal text-[#FD6F00]  dark:text-[#959595]">
                             <li>
                                 <Link
                                     // activeClass="active"

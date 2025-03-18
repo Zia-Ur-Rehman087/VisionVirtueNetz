@@ -8,8 +8,8 @@ import Container from '@mui/material/Container'
 import {HireBtn} from '../../../reusable/social/index.js'
 import sun from '../../../../public/sun.svg'
 import moon from '../../../../public/moon.svg'
-import { Link, animateScroll as scroll } from "react-scroll";
-
+import { Link} from "react-scroll";
+import Image from 'next/image.js';
 const k2d = K2D({
     subsets: ['latin'],
     weight: ['400']
@@ -125,7 +125,7 @@ function Header() {
                             border border-2 border-transparent hover:text-[#959595]
                             hover:bg-transparent hover:border hover:border-2 hover:border-[#959595] cursor-pointer transition-all duration-300`} />
                         <button onClick={handleTheme} className={`btn text-sm hover:bg-[#FD6F00] md:text-lg capitalize py-2 px-5 md:px-8 rounded-lg hidden md:block ${theme === 'light' ? 'bg-transparent border-2 border-[#FD6F00]' : 'bg-transparent border-2 border-[#959595]'} transition-all duration-500 cursor-pointer`}>
-                            {theme === 'light' ? <img src={sun.src} /> : <img src={moon.src} className="-rotate-45" />}
+                            {theme === 'light' ? <Image src={sun.src} alt={sun.src} width={20} height={20}/> : <Image src={moon.src} className="-rotate-45" alt={moon.src} width={20} height={20}/>}
                         </button>
                     </div>
                 </Container>
