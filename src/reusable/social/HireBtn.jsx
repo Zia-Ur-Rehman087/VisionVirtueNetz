@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const HireBtn  = ({ children, text = "Click Me", classes = "", ...rest }) => {
   return (

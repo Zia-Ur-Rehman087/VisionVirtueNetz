@@ -1,8 +1,7 @@
 'use client'
 import Data from './Data.js';
 import user from '../../../../public/user.svg'
-
-
+import Image from 'next/image.js';
 
 function ServiceCards() {
     return ( 
@@ -16,15 +15,16 @@ function ServiceCards() {
         </div>
    </div>
 <div className="flex items-center justify-between py-6 w-full">
-     <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 w-fit items-center place-items-center w-full">
+     <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6  items-center place-items-center w-full">
      {Data.map((el) => {
     return (
       <div key={el.id} className="bg-transparent dark:bg-[#1B1B1B] rounded-lg border-[1px] border-[#FD6F00] dark:border-none flex flex-col items-center justify-center p-3 md:p-6 text-center text-white">
         <div className="card">
-          <img
+          <Image
             src={user.src}
-            alt="icon"
+            alt={user.src}
             className=" mx-auto mb-4"
+            width={100} height={100}
           />
           <h1 className="text-base md:text-lg font-semibold text-orange-500 mb-2">
             {el.title}
