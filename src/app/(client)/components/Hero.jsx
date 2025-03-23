@@ -18,7 +18,7 @@ return (
 
 <h4 className='text-[#959595] text-lg md:text-xl text-center xl:text-start '>
 <span className="text-[#707070]">Hi I am</span><br/>
-Mahmood Fazile</h4>
+Zia-Ur-Rehman</h4>
 {/* <span class="absolute inset-0 -z-10 top-24 bg-orange-500 blur-md  w-72 h-72 rounded-full"></span> */}
 <div className='absolute top-0 translate-x-0  md:translate-x-0 -z-10 blur-lg w-80 h-80'>
 <HeroIcon />
